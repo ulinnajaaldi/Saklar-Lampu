@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesi 4 Operasi Lampu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/image/image-logo.svg"
+            alt="image-logo"
+            width="40"
+            class="d-inline-block rounded-circle border border-primary"
+          />
+          Operasi Lampu
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Main -->
+    <main class="bg-light">
+      <div class="container">
+        <!-- Lamp start -->
+        <div class="col">
+          <div
+            class="d-flex align-items-center justify-content-center border bg-dark text-white rounded-pill mt-3 w-50 p-2 m-auto"
+          >
+            <p class="m-2">Ruang Keluarga</p>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toogle-keluarga"
+                onchange="saklarKeluarga()"
+              />
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-keluarga-1"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-keluarga-1"
+                  onclick="saklarKeluarga()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-keluarga-2"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-keluarga-2"
+                  onchange="saklarKeluarga()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-keluarga-3"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-keluarga-3"
+                  onchange="saklarKeluarga()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lamp end -->
+        <!-- Lamp start -->
+        <div class="col">
+          <div
+            class="d-flex align-items-center justify-content-center border bg-dark text-white rounded-pill mt-3 w-50 p-2 m-auto"
+          >
+            <p class="m-2">Ruang Makan</p>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toogle-makan"
+                onchange="saklarMakan()"
+              />
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-makan-1"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-makan-1"
+                  onclick="saklarMakan()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lamp end -->
+        <!-- Lamp start -->
+        <div class="col">
+          <div
+            class="d-flex align-items-center justify-content-center border bg-dark text-white rounded-pill mt-3 w-50 p-2 m-auto"
+          >
+            <p class="m-2">Ruang Tidur</p>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toogle-tidur"
+                onchange="saklarTidur()"
+              />
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tidur-1"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tidur-1"
+                  onclick="saklarTidur()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tidur-2"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tidur-2"
+                  onchange="saklarTidur()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lamp end -->
+        <!-- Lamp start -->
+        <div class="col">
+          <div
+            class="d-flex align-items-center justify-content-center border bg-dark text-white rounded-pill mt-3 w-50 p-2 m-auto"
+          >
+            <p class="m-2">Ruang Tamu</p>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toogle-tamu"
+                onchange="saklarTamu()"
+              />
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tamu-1"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tamu-1"
+                  onclick="saklarTamu()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tamu-2"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tamu-2"
+                  onchange="saklarTamu()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tamu-3"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tamu-3"
+                  onchange="saklarTamu()"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <img
+                src="assets/image/off.gif"
+                alt="off"
+                class="img-fluid"
+                id="lampu-tamu-4"
+              />
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="toogle-tamu-4"
+                  onchange="saklarTamu()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lamp end -->
+      </div>
+    </main>
+    <!-- Main end -->
+    <footer class="bg-dark text-white mt-4">
+      <p class="text-center p-2 mb-0">
+        &copy; Sesi 4 Cuy University - Ulinnaja Aldi
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/saklar.js"></script>
+  </body>
+</html>
